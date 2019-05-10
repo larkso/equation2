@@ -4,7 +4,7 @@
 using namespace std;
 
 /*
-check - проверка правильности введённых цифр
+check - РїСЂРѕРІРµСЂРєР° РїСЂР°РІРёР»СЊРЅРѕСЃС‚Рё РІРІРµРґС‘РЅРЅС‹С… С†РёС„СЂ
 */
 bool check(float number1,float number2)
 {
@@ -16,7 +16,7 @@ bool check(float number1,float number2)
 }
 
 /*
-main - вход в программу
+main - РІС…РѕРґ РІ РїСЂРѕРіСЂР°РјРјСѓ
 */
 int main()
 {
@@ -24,24 +24,24 @@ int main()
     float number1 = 0;
     float number2 = 0;
 
-    cout << "Решите уравнение:\r\n" << endl;
+    cout << "Р РµС€РёС‚Рµ СѓСЂР°РІРЅРµРЅРёРµ:\r\n" << endl;
 
     cout << " 2 * x^2 + 3 * x     x - x^2" << endl;
     cout << "----------------- = ---------" << endl;
     cout << "    3 - x             x - 3\r\n" << endl;
 
     while (!check(number1, number2)) {
-        cout << "Введите 1-e число: " ;
+        cout << "Р’РІРµРґРёС‚Рµ 1-e С‡РёСЃР»Рѕ: " ;
         cin >> number1;
-        cout << "Введите 2-e число: " ;
+        cout << "Р’РІРµРґРёС‚Рµ 2-e С‡РёСЃР»Рѕ: " ;
         cin >> number2;
         if (!check(number1, number2)) {
-            cout << "Неправильно, попробуйте ещё раз!\r\n" << endl;
+            cout << "РќРµРїСЂР°РІРёР»СЊРЅРѕ, РїРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰С‘ СЂР°Р·!\r\n" << endl;
         }
     }
 
-    cout << "\r\nПравильно!" << endl;
-    cout << "Досвиданья! Нажмите Enter" << endl;
+    cout << "\r\nРџСЂР°РІРёР»СЊРЅРѕ!" << endl;
+    cout << "Р”РѕСЃРІРёРґР°РЅСЊСЏ! РќР°Р¶РјРёС‚Рµ Enter" << endl;
     getch();
     return 0;
 }
